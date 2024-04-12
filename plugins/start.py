@@ -195,6 +195,6 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
 
     else:
         msg = await message.reply(REPLY_ERROR)
-        await asyncio.sleep()
+        await asyncio.sleep(8)
         await msg.delete()
 
