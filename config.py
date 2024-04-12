@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7048283612:AAEwwhJ03yfpi7C7v7VsxUYfn4jKrRPOrS4")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "21944530"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "21944530"))
 API_HASH = os.environ.get("API_HASH", "0b629e4827bd82816a5959211618902a")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002111891882"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "asiknyamedia")
@@ -35,8 +35,8 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://botvtm:Rizqi1687.@atlascl
 DB_NAME = os.environ.get("DATABASE_NAME", "botvtm")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002056618599"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002112192906"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-100"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-100"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -50,36 +50,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", " 𝟿 ɢʀᴜᴘ ᴠᴠɪᴘ ᴄᴜᴍᴀ 𝟸𝟻ᴋ
-
-ᴋᴇᴜɴᴛᴜɴɢᴀɴ ᴠᴠɪᴘ
-- ɴᴏɴᴛᴏɴ ᴛᴀɴᴘᴀ ʟɪɴᴋ
-- ʙᴇʀɪsɪ ʀɪʙᴜᴀɴ ᴠɪᴅᴇᴏ
-- ᴜᴘᴅᴀᴛᴇ ᴛᴇʀᴜs ᴛɪᴀᴘ ʜᴀʀɪ
-
-ᴠᴠɪᴘ ɪɴᴅᴏ
-ᴠᴠɪᴘ ʙᴏᴄɪʟ
-ᴠᴠɪᴘ ʜɪᴊᴀʙ
-ᴠᴠɪᴘ ᴊᴀᴠ
-ᴠᴠɪᴘ ᴛᴀʟᴇɴᴛ
-ᴠᴠɪᴘ ᴄᴏʟᴍᴇᴋ
-ᴠᴠɪᴘ ᴘᴇʟᴀᴊᴀʀ
-ᴠᴠɪᴘ ʟᴇsʙɪ
-ᴠᴠɪᴘ ɢᴀɴɢʙᴀɴɢ
-
-ᴘᴀʏᴍᴇɴᴛ
-- ǫʀɪs
-- ᴅᴀɴᴀ
-- ɢᴏᴘᴀʏ
-- ᴏᴠᴏ
-- sʜᴏᴘᴇᴘᴀʏ
-- ᴍ ʙᴀɴᴋɪɴɢ
-
-ᴊᴏɪɴ ᴄᴏɴᴛᴀᴄᴛ @asiknyamedia
-
-ᴊᴏɪɴ ᴏᴛᴏᴍᴀᴛɪs @asiknyamediabot
-
-ᴛᴇsᴛɪ @testijoinvvipnya    {first}\n\n<b>Anda harus bergabung di Channel/Grup saya untuk menggunakan saya</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", " Hello {first}\n\n<b>Anda harus bergabung di Channel/Grup saya untuk menggunakan saya</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b> 𝟿 ɢʀᴜᴘ ᴠᴠɪᴘ ᴄᴜᴍᴀ 𝟸𝟻ᴋ
