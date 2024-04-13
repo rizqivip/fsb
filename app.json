@@ -23,7 +23,7 @@
     },
     "DATABASE_URL": {
       "description": "Paste your mongo db url",
-      "value": "mongodb+srv://botvtm:Rizqi1687.@atlascluster.y9vs3uq.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster""
+      "value": "mongodb+srv://botvtm:Rizqi1687.@atlascluster.y9vs3uq.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster"
     },
     "DATABASE_NAME":{
       "description": "Enter your DATABASE_NAME ",
